@@ -1,3 +1,7 @@
 import { combineReducers } from "redux";
 
-export default combineReducers({});
+import { employeesApi as employees } from "./api/employees";
+
+export default combineReducers({
+  [employees.reducerPath]: employees.reducer,
+});
