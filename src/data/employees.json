@@ -1,0 +1,144 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "first_name": "Kimbell",
+      "last_name": "Aleksandrov",
+      "email": "kaleksandrov0@parallels.com",
+      "state": "added"
+    },
+    {
+      "id": 2,
+      "first_name": "Silvan",
+      "last_name": "Lowde",
+      "email": "slowde1@naver.com",
+      "state": "inactive"
+    },
+    {
+      "id": 3,
+      "first_name": "Elnora",
+      "last_name": "Fryers",
+      "email": "efryers2@list-manage.com",
+      "state": "inactive"
+    },
+    {
+      "id": 4,
+      "first_name": "Zeb",
+      "last_name": "Dunsmuir",
+      "email": "zdunsmuir3@engadget.com",
+      "state": "active"
+    },
+    {
+      "id": 5,
+      "first_name": "Hewet",
+      "last_name": "Debill",
+      "email": "hdebill4@mapquest.com",
+      "state": "inactive"
+    },
+    {
+      "id": 6,
+      "first_name": "Dede",
+      "last_name": "Oury",
+      "email": "doury5@economist.com",
+      "state": "active"
+    },
+    {
+      "id": 7,
+      "first_name": "Timmie",
+      "last_name": "Stollenhof",
+      "email": "tstollenhof6@addthis.com",
+      "state": "approved"
+    },
+    {
+      "id": 8,
+      "first_name": "Fredek",
+      "last_name": "Antonikov",
+      "email": "fantonikov7@intel.com",
+      "state": "inactive"
+    },
+    {
+      "id": 9,
+      "first_name": "Phillipe",
+      "last_name": "Sitlinton",
+      "email": "psitlinton8@msu.edu",
+      "state": "approved"
+    },
+    {
+      "id": 10,
+      "first_name": "Ardelis",
+      "last_name": "Everix",
+      "email": "aeverix9@cyberchimps.com",
+      "state": "approved"
+    },
+    {
+      "id": 11,
+      "first_name": "Luther",
+      "last_name": "Maryet",
+      "email": "lmaryeta@4shared.com",
+      "state": "approved"
+    },
+    {
+      "id": 12,
+      "first_name": "Mallorie",
+      "last_name": "Brittian",
+      "email": "mbrittianb@w3.org",
+      "state": "added"
+    },
+    {
+      "id": 13,
+      "first_name": "Cobby",
+      "last_name": "Jeal",
+      "email": "cjealc@howstuffworks.com",
+      "state": "added"
+    },
+    {
+      "id": 14,
+      "first_name": "Martita",
+      "last_name": "Lawrenceson",
+      "email": "mlawrencesond@qq.com",
+      "state": "approved"
+    },
+    {
+      "id": 15,
+      "first_name": "Obie",
+      "last_name": "Sherratt",
+      "email": "osherratte@arizona.edu",
+      "state": "active"
+    },
+    {
+      "id": 16,
+      "first_name": "Randie",
+      "last_name": "Isgate",
+      "email": "risgatef@mac.com",
+      "state": "added"
+    },
+    {
+      "id": 17,
+      "first_name": "Veronica",
+      "last_name": "Chatain",
+      "email": "vchataing@cargocollective.com",
+      "state": "in_check"
+    },
+    {
+      "id": 18,
+      "first_name": "Mae",
+      "last_name": "Wescott",
+      "email": "mwescotth@youtu.be",
+      "state": "inactive"
+    },
+    {
+      "id": 19,
+      "first_name": "Natty",
+      "last_name": "Kemwall",
+      "email": "nkemwalli@nih.gov",
+      "state": "added"
+    },
+    {
+      "id": 20,
+      "first_name": "Calv",
+      "last_name": "Dayer",
+      "email": "cdayerj@scribd.com",
+      "state": "in_check"
+    }
+  ]
+}
