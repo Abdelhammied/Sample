@@ -1,5 +1,5 @@
-import { configureStore, getDefaultMiddleware } from "@reduxjs/toolkit";
-import { employeesApi } from "./api/employees";
+import { configureStore } from "@reduxjs/toolkit";
+import { employeesApi } from "./api/employees/employees";
 import reducers from "./reducers";
 
 export const store = configureStore({

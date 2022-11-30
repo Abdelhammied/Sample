@@ -1,4 +1,5 @@
 import React, { ReactElement } from "react";
+
 import {
   Backdrop,
   CircularProgress,
@@ -10,7 +11,7 @@ import {
 } from "@mui/material/";
 
 import EmployeesTable from "./Table/Table";
-import { useGetEmployeesQuery } from "../../store/api/employees";
+import { useGetEmployeesQuery } from "../../store/api/employees/employees";
 
 interface Props {}
 

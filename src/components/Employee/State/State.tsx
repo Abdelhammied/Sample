@@ -5,6 +5,6 @@ interface Props {
   employeeState: Employee["state"];
 }
 
-export default function Index({}: Props): ReactElement {
-  return <></>;
+export default function Index({ employeeState }: Props): ReactElement {
+  return <>{employeeState}</>;
 }

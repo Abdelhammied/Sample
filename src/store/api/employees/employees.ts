@@ -1,23 +1,9 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-import { Employee } from "../../models/Employee";
 
-type GetEmployees = {
-  request: {
-    page: number;
-  };
+import { GetEmployees, UpdateEmployeeStateParameter } from "./types";
+import { Employee } from "../../../models/Employee";
 
-  response: {
-    data: Employee[];
-    meta: {
-      last_page: number;
-    };
-  };
-};
-
-type UpdateEmployeeStateParameter = {
-  id: Employee["id"];
-  state: Employee["state"];
-};
+const ITEMS_PER_PAGE = import.meta.env.VITE_ITEMS_PER_PAGE;
 
 export const employeesApi = createApi({
   reducerPath: "employees",
@@ -27,8 +13,7 @@ export const employeesApi = createApi({
       GetEmployees["response"],
       GetEmployees["request"]
     >({
-      query: ({ page }) =>
-        `employees?_page=${page}&_limit=${import.meta.env.VITE_ITEMS_PER_PAGE}`,
+      query: ({ page }) => `employees?_page=${page}&_limit=${ITEMS_PER_PAGE}`,
       transformResponse: (data: GetEmployees["response"]["data"], meta) => {
         const totalRecordCount =
           Number(meta?.response?.headers.get("X-Total-Count")) || 1;
@@ -36,9 +21,7 @@ export const employeesApi = createApi({
         return {
           data,
           meta: {
-            last_page: Math.round(
-              totalRecordCount / import.meta.env.VITE_ITEMS_PER_PAGE
-            ),
+            last_page: Math.round(totalRecordCount / ITEMS_PER_PAGE),
           },
         };
       },
