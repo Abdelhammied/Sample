@@ -8,15 +8,22 @@ import {
   Pagination,
   Box,
   Stack,
-} from "@mui/material/";
+  Snackbar,
+} from "@mui/material";
+import { useDispatch, useSelector } from "react-redux";
+import { RootState, AppDispatch } from "../../store/store.config";
 
+import { updatePage as updatePageAction } from "../../store/employee/pageSlice";
 import EmployeesTable from "./Table/Table";
 import { useGetEmployeesQuery } from "../../store/api/employees/employees";
 
 interface Props {}
 
 export default function Employee({}: Props): ReactElement {
-  const [page, setPage] = React.useState<number>(1);
+  const page = useSelector((state: RootState) => state["page"]);
+  const dispatch: AppDispatch = useDispatch();
+
+  const updatePage = (page: number) => dispatch(updatePageAction(page));
 
   const {
     data,
@@ -35,15 +42,7 @@ export default function Employee({}: Props): ReactElement {
     [page]
   );
 
-  if (isLoading || isFetching) {
-    return (
-      <Backdrop open>
-        <CircularProgress />
-      </Backdrop>
-    );
-  }
-
-  if (!data || isError) {
+  if (!data || (isError && !isLoading && !isFetching)) {
     return (
       <Typography>
         Something went wrong please make sure to follow the setup steps.
@@ -59,7 +58,7 @@ export default function Employee({}: Props): ReactElement {
         <Stack marginTop={2} alignItems="center">
           <Pagination
             page={page}
-            onChange={(e, newPage) => setPage(newPage)}
+            onChange={(e, newPage) => updatePage(newPage)}
             count={data.meta.last_page}
           />
         </Stack>

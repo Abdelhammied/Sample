@@ -19,49 +19,49 @@
       "first_name": "Elnora",
       "last_name": "Fryers",
       "email": "efryers2@list-manage.com",
-      "state": "inactive"
+      "state": "in_check"
     },
     {
       "id": 4,
       "first_name": "Zeb",
       "last_name": "Dunsmuir",
       "email": "zdunsmuir3@engadget.com",
-      "state": "active"
+      "state": "added"
     },
     {
       "id": 5,
       "first_name": "Hewet",
       "last_name": "Debill",
       "email": "hdebill4@mapquest.com",
-      "state": "inactive"
+      "state": "added"
     },
     {
       "id": 6,
       "first_name": "Dede",
       "last_name": "Oury",
       "email": "doury5@economist.com",
-      "state": "active"
+      "state": "inactive"
     },
     {
       "id": 7,
       "first_name": "Timmie",
       "last_name": "Stollenhof",
       "email": "tstollenhof6@addthis.com",
-      "state": "approved"
+      "state": "inactive"
     },
     {
       "id": 8,
       "first_name": "Fredek",
       "last_name": "Antonikov",
       "email": "fantonikov7@intel.com",
-      "state": "inactive"
+      "state": "added"
     },
     {
       "id": 9,
       "first_name": "Phillipe",
       "last_name": "Sitlinton",
       "email": "psitlinton8@msu.edu",
-      "state": "approved"
+      "state": "in_check"
     },
     {
       "id": 10,
@@ -75,7 +75,7 @@
       "first_name": "Luther",
       "last_name": "Maryet",
       "email": "lmaryeta@4shared.com",
-      "state": "approved"
+      "state": "inactive"
     },
     {
       "id": 12,
@@ -89,14 +89,14 @@
       "first_name": "Cobby",
       "last_name": "Jeal",
       "email": "cjealc@howstuffworks.com",
-      "state": "added"
+      "state": "inactive"
     },
     {
       "id": 14,
       "first_name": "Martita",
       "last_name": "Lawrenceson",
       "email": "mlawrencesond@qq.com",
-      "state": "approved"
+      "state": "added"
     },
     {
       "id": 15,
@@ -138,7 +138,7 @@
       "first_name": "Calv",
       "last_name": "Dayer",
       "email": "cdayerj@scribd.com",
-      "state": "in_check"
+      "state": "inactive"
     }
   ]
 }

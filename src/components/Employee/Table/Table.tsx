@@ -34,7 +34,10 @@ export default function Table({ employees }: Props): ReactElement {
               <TableCell>{`${employee.first_name} ${employee.last_name}`}</TableCell>
               <TableCell>{employee.email}</TableCell>
               <TableCell>
-                <EmployeeState employeeState={employee.state} />
+                <EmployeeState
+                  employeeId={employee.id}
+                  employeeState={employee.state}
+                />
               </TableCell>
             </TableRow>
           ))}

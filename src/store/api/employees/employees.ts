@@ -1,12 +1,12 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 import { GetEmployees, UpdateEmployeeStateParameter } from "./types";
-import { Employee } from "../../../models/Employee";
 
 const ITEMS_PER_PAGE = import.meta.env.VITE_ITEMS_PER_PAGE;
 
 export const employeesApi = createApi({
   reducerPath: "employees",
+  tagTypes: ["Employees"],
   baseQuery: fetchBaseQuery({ baseUrl: import.meta.env.VITE_BACKEND_BASE_URL }),
   endpoints: (builder) => ({
     getEmployees: builder.query<
@@ -28,7 +28,7 @@ export const employeesApi = createApi({
     }),
     updateEmployeeState: builder.mutation<{}, UpdateEmployeeStateParameter>({
       query: ({ id, state }) => ({
-        method: "post",
+        method: "PATCH",
         url: `/employees/${id}`,
         body: {
           state,
