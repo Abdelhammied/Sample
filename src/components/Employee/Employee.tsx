@@ -55,13 +55,15 @@ export default function Employee({}: Props): ReactElement {
     <Container>
       <EmployeesTable employees={data.data} />
 
-      <Stack marginTop={2} alignItems="center">
-        <Pagination
-          page={page}
-          onChange={(e, newPage) => setPage(newPage)}
-          count={data.meta.last_page}
-        />
-      </Stack>
+      {data.meta.last_page > 1 && (
+        <Stack marginTop={2} alignItems="center">
+          <Pagination
+            page={page}
+            onChange={(e, newPage) => setPage(newPage)}
+            count={data.meta.last_page}
+          />
+        </Stack>
+      )}
     </Container>
   );
 }
