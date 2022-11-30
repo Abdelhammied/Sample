@@ -2,7 +2,7 @@ import React, { ReactElement } from "react";
 
 import {
   TableContainer,
-  Table,
+  Table as MuiTable,
   TableHead,
   TableBody,
   TableRow,
@@ -16,10 +16,10 @@ interface Props {
   employees: Employee[];
 }
 
-export default function index({ employees }: Props): ReactElement {
+export default function Table({ employees }: Props): ReactElement {
   return (
     <TableContainer>
-      <Table>
+      <MuiTable>
         <TableHead>
           <TableRow>
             <TableCell>Name</TableCell>
@@ -39,7 +39,7 @@ export default function index({ employees }: Props): ReactElement {
             </TableRow>
           ))}
         </TableBody>
-      </Table>
+      </MuiTable>
     </TableContainer>
   );
 }

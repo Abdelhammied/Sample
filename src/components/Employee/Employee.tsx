@@ -15,7 +15,7 @@ import { useGetEmployeesQuery } from "../../store/api/employees/employees";
 
 interface Props {}
 
-export default function Index({}: Props): ReactElement {
+export default function Employee({}: Props): ReactElement {
   const [page, setPage] = React.useState<number>(1);
 
   const {
