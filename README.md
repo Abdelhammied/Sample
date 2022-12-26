@@ -1,4 +1,4 @@
-# WorkMotionTechnicalTask
+# Sample Code For a Technical Task for a multinational company :) 
 
 How to tun the project 
 
